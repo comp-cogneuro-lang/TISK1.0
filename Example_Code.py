@@ -239,7 +239,7 @@ tisk_Model.Display_Mean_Category_Count(
             pronunciation_List = length3_Pronunciation_List)
 
 tisk_Model.Display_Mean_Category_Count(
-            pronunciation_List = length3_Pronunciation_List)
+            pronunciation_List = length5_Pronunciation_List)
 
 
 # Select words with length greater than or equal to 3 with
