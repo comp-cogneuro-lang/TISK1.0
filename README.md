@@ -73,7 +73,7 @@ tisk_Model = tisk.TISK_Model(phoneme_List, pronunciation_List,
 # OR you can load an alternative lexicon file by specifying a 
 # filename in the generate command::
 phoneme_List, pronunciation_List = tisk.List_Generate(
-                             pronunciation_File = other_lexicon.txt')
+                             pronunciation_File = 'other_lexicon.txt')
 
 ```
 ## Initialize and / or modify parameters
@@ -353,7 +353,8 @@ You may wnat to know more about the details of the competitors for a specific wo
 
 ```
 # Getting the competitor information
-competitor_List = tisk_Model.Category_List('b^s')
+competitor_List = tisk_Model.Category_List(
+          pronunciation = 'b^s')
 ```
 
 When you use this command, the model will return four lists. The lists contain the cohorts, rhyme, embedding, and other words, respectively.
@@ -381,7 +382,8 @@ You can also inspect the details of the competitors for a list of words, rather 
 
 ```
 # Display the mean competitor count
-tisk_Model.Display_Mean_Category_Count(pronunciation_List)
+tisk_Model.Display_Mean_Category_Count(
+          pronunciation_List = pronunciation_List)
 ```
 
 This command will display the mean number of each competitor type for the specified word list. The preceding command would display the results for the full default lexicon, as follows:
@@ -471,10 +473,10 @@ We might want to know if differences between the word lengths are due to differe
 ```
 # check competitor counts of length 3 and length 5 lists
 tisk_Model.Display_Mean_Category_Count(
-length3_Pronunciation_List)
+          pronunciation_List = length3_Pronunciation_List)
 
 tisk_Model.Display_Mean_Category_Count(
-length3_Pronunciation_List)
+          pronunciation_List = length3_Pronunciation_List)
 ```
 
 Of course, this example just scratches the surface of what is possible since TISK is embedded within a complete scripting language. Using standard Python syntax, we can easily filter words by specifying arbitrarily complex conditions. Here are some examples:
@@ -493,7 +495,8 @@ tisk_Model.Average_Activation_by_Category_Graph(
 filtered_Pronunciation_List = [x for x in pronunciation_List if len(x) >= 3 and x[2] == 'a' and x[3]=='k']
 
 # check competitor count of filtered list 
-tisk_Model.Display_Mean_Category_Count(filtered_Pronunciation_List)
+tisk_Model.Display_Mean_Category_Count(
+          pronunciation_List = filtered_Pronunciation_List)
 ```
 
 # Reporting Issues
