@@ -1,6 +1,6 @@
 # TISK 1.x Distribution
 
-This code is to run a TISK model on Python 3.x. Note that code snippets below (and from our manuscript in progress) are included in the standalone file 'Example_Code.py'). 
+*This code is an implementation of the TISK model in Python 3.x. Note that code snippets below (and from our manuscript in progress) are included in the standalone file 'Example_Code.py').* 
 
 TISK is the Time Invariant String Model of (human) spoken word recognition, first reported by Hannagan, Magnuson, & Grainger (2013; https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00563/full). This implementation is an extension of Thomas Hannagan's original code, developed by Heejo You in consultation with Hannagan and Magnuson. The extensions include more speed optimization, a variety of convenience functions, and in-line graphing (if you use an IDE). Our aim in making it publicly available is to make it easier for researchers to do their own simulations. We hope others will consider extending the code in interesting ways. 
 
