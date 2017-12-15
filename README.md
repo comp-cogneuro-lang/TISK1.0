@@ -500,6 +500,6 @@ tisk_Model.Display_Mean_Category_Count(filtered_Pronunciation_List)
 
 If you suspect that a bug has caused a malfunction while using the program, please report it using the issues feature of this repository.
 
-https://github.com/CODEJIN/Tisk/issues
+https://github.com/maglab-uconn/TISK1.0/issues
 
 We may not be able to respond promptly to issues because this is outside our normal job duties. However, we will attend to issues as soon as we can! Thank you for your understanding.
