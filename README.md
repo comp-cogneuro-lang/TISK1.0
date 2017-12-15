@@ -476,7 +476,7 @@ tisk_Model.Display_Mean_Category_Count(
           pronunciation_List = length3_Pronunciation_List)
 
 tisk_Model.Display_Mean_Category_Count(
-          pronunciation_List = length3_Pronunciation_List)
+          pronunciation_List = length5_Pronunciation_List)
 ```
 
 Of course, this example just scratches the surface of what is possible since TISK is embedded within a complete scripting language. Using standard Python syntax, we can easily filter words by specifying arbitrarily complex conditions. Here are some examples:
